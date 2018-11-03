@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logo_nav{
+    width: 170px;
+    height: 50px;
+}
+
+nav{
+    margin: 8px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #002a5a;
+    font-weight: 900;
+    
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    border-bottom: 2px solid #6ea6d9;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    font-weight: bolder;
+    height: 60px;
+    padding: 35px 0px;
+    font-size: 2rem;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border-right: #002a5a 3px solid;
+    width: 650px;
+    align-items: center;
+    margin-right: 2px;
+}
+
+fieldset{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border: none;
+}
+
+fieldset>input{
+    width:500px;
+    height: 35px;
+    border: 1.6px solid #002a5abb;
+    border-radius: 15px;
+}
+
+fieldset>textarea{
+    width: 500px;
+    height: 130px;
+    border: 1.6px solid #002a5abb;
+    border-radius: 10px;
+}
+
+fieldset>label{
+    text-align: left;
+    margin: 8px;
+}
+
+.botao {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 18%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    background: #002a5a;
+    border: 1px solid #002a5a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.botao--desabilitado {
+    color: gray;
+    background: lightgrey;
+    border-color: lightgrey;
+  }
+
+#contatos{
+    border-left: #6ea6d9 3px solid;
+    margin-left: 2px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contatos p{
+    text-align: center;
+    color: #002a5a;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+#redes_sociais img{
+    margin: 20px 10px;
+    height: 70px;
+    width: 70px;
+}
