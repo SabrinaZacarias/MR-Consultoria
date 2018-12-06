@@ -41,7 +41,7 @@ header{
     flex-direction: column;
     background: linear-gradient(to bottom, rgba(0, 42, 90, 0.616),rgba(0, 42, 90, 0.616)), url("../img/background.jpg");
     background-size: cover;
-    height: 540px;
+    /* height: 540px; */
     
 }
 
@@ -59,13 +59,13 @@ header img{
     margin-bottom: 20px;
 }
 
-section{
+#a-empresa{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
 
-section h2{
+#a-empresa h2{
     text-align: center;
     font-weight: bolder;
     width: 1050px;
@@ -73,7 +73,7 @@ section h2{
     margin-left: 100px;
 }
 
-section>div{
+#a-empresa>div{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -100,3 +100,229 @@ section>div{
     height: 70px;
     
 }
+
+@media screen and (max-width: 992px) {
+    body{
+        margin: 0px;
+        font-family: 'Montserrat', sans-serif;
+        width: 990px;
+        
+    }
+    
+    #logo_nav{
+        width: 100px;
+        height: 30px;
+    }
+    
+    nav{
+        margin: 4px 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 650px;
+
+        
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        width: 500px;
+        
+    }
+    
+    .menu a{
+        text-decoration: none;
+        color: #002a5a;
+        font-weight: 900;
+        font-size: 0.8rem;
+        
+    }
+    
+    .menu a:hover{
+        text-decoration: underline;
+        border-bottom: 1px solid #6ea6d9;
+        box-sizing: border-box;
+    }
+    
+    header{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(to bottom, rgba(0, 42, 90, 0.616),rgba(0, 42, 90, 0.616)), url("../img/background_resp992.jpg");
+        background-repeat: no-repeat;
+        height: 450px;
+     
+        
+    }
+    
+    header p{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        width:500px;
+        text-align: center;
+    }
+    
+    header img{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    
+    #a-empresa{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+    
+    #a-empresa h2{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        margin: 10px 0px;
+        width: 400px;
+    }
+    
+    #a-empresa>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .bloco-servicos{
+        width: 300px;
+        text-align: center;
+    }
+    
+    .bloco-servicos h3{
+        color: #6ea6d9;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 1.1rem;
+        
+    }
+    
+    .bloco-servicos li{
+        text-align: left;
+        font-size:1rem;
+    }
+    
+    .bloco-servicos img{
+        width:50px;
+        height: 50px;
+        
+    }
+  }
+/*   
+ 
+  @media screen and (max-width: 600px) {
+    body{
+        margin: 0px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    #logo_nav{
+        width: 170px;
+        height: 50px;
+    }
+    
+    nav{
+        margin: 8px 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        width: 1000px;
+    }
+    
+    .menu a{
+        text-decoration: none;
+        color: #002a5a;
+        font-weight: 900;
+        
+    }
+    
+    .menu a:hover{
+        text-decoration: underline;
+        border-bottom: 2px solid #6ea6d9;
+        box-sizing: border-box;
+    }
+    
+    header{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(to bottom, rgba(0, 42, 90, 0.616),rgba(0, 42, 90, 0.616)), url("../img/background.jpg");
+        background-size: cover;
+        height: 540px;
+        
+    }
+    
+    header p{
+        color: white;
+        font-size: 2rem;
+        font-weight: bolder;
+        width:700px;
+        text-align: center;
+    }
+    
+    header img{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    
+    #a-empresa{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    #a-empresa h2{
+        text-align: center;
+        font-weight: bolder;
+        width: 1050px;
+        font-size: 1.5rem;
+        margin-left: 100px;
+    }
+    
+    #a-empresa>div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .bloco-servicos{
+        width: 400px;
+        text-align: center;
+    }
+    
+    .bloco-servicos h3{
+        color: #6ea6d9;
+        font-weight: bolder;
+        text-align: center;
+        
+    }
+    
+    .bloco-servicos li{
+        text-align: left
+    }
+    
+    .bloco-servicos img{
+        width:70px;
+        height: 70px;
+        
+    }
+  } */

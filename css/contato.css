@@ -68,6 +68,8 @@ fieldset>input{
     height: 35px;
     border: 1.6px solid #002a5abb;
     border-radius: 15px;
+    -ms-border: 1.6px;
+    -ms-border-color: #002a5abb;
 }
 
 fieldset>textarea{
