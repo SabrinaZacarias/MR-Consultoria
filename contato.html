@@ -22,7 +22,7 @@
         </nav>
         <h2>ENTRE EM CONTATO CONOSCO</h2>
         <section>
-            <form action="mail_send.php" method='post'>
+            <form action="https://formspree.io/sabrina.zacs@gmail.com" method="POST">
                 <fieldset>
                     <label for="nome">NOME </label>
                     <input required name="nome" type="text">
@@ -30,7 +30,7 @@
 
                 <fieldset>
                     <label for="email">EMAIL</label>
-                    <input required name="email" type="email">
+                    <input required name="_replyto" type="email">
                 </fieldset>
 
                 <fieldset>
@@ -43,7 +43,7 @@
                     <textarea required name="mensagem"></textarea>
                 </fieldset>
             
-                <button class='botao' type="submit">ENVIAR</button>
+                <button class='botao' type="submit" value="Send">ENVIAR</button>
             </form>
             <div id='contatos'>
                 <p>CONTATO.MRCONSULTORIA@GMAIL.COM</p>

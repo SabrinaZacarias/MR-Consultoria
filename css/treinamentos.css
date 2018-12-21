@@ -36,7 +36,7 @@ nav{
 
 #treinamento{
     background-color: #002a5a;
-    height: 515px;  
+    height: 90vh;  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,19 +78,19 @@ nav{
     text-align: justify;
 }
 #clientes{
-    background: linear-gradient(to bottom, rgb(0, 42, 90),rgb(136, 175, 214));
+    background: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 600px;
+    height: 100vh;
 
 }
 #clientes h2{
     text-align:center;
-    height: 50px;
-    padding-top: 30px;
-    color: white;
+    font-size: 2rem;    
+    color: #002a5a;
     font-weight: bolder;
+    padding: 0;
 }
 
 #clientes>div{
