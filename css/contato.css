@@ -70,6 +70,7 @@ fieldset>input{
     border-radius: 15px;
     -ms-border: 1.6px;
     -ms-border-color: #002a5abb;
+    padding-left: 10px;
 }
 
 fieldset>textarea{
@@ -77,6 +78,8 @@ fieldset>textarea{
     height: 130px;
     border: 1.6px solid #002a5abb;
     border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
 }
 
 fieldset>label{
@@ -95,12 +98,6 @@ fieldset>label{
     border: 1px solid #002a5a;
     border-radius: 5px;
     cursor: pointer;
-  }
-
-.botao--desabilitado {
-    color: gray;
-    background: lightgrey;
-    border-color: lightgrey;
   }
 
 #contatos{
