@@ -4,27 +4,33 @@ body{
 }
 
 #logo_nav{
-    width: 170px;
-    height: 50px;
+    width: 30vw;
+    height: 8vh;
 }
 
 nav{
-    margin: 8px 0px;
+    margin: 3px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 8vh;
 }
 
 .menu{
     display: flex;
     justify-content: space-evenly;
-    width: 1000px;
+    width: 70vw;
+}
+
+.hide{
+    display: none;
 }
 
 .menu a{
     text-decoration: none;
     color: #002a5a;
     font-weight: 900;
+    font-size: 0.8rem;
     
 }
 
@@ -35,27 +41,29 @@ nav{
 }
 
 header{
+    padding-top: 2rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background: linear-gradient(to bottom, rgba(0, 42, 90, 0.616),rgba(0, 42, 90, 0.616)), url("../img/background.jpg");
     background-size: cover;
-    height: 90vh
+    height: 90vh;
     
 }
 
 header p{
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
-    width:700px;
+    width:80vw;
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 header img{
-    width: 50px;
-    height: 50px;
+    width: 14vw;
+    height: 10vh;
     margin-bottom: 20px;
 }
 
@@ -68,9 +76,8 @@ header img{
 #a-empresa h2{
     text-align: center;
     font-weight: bolder;
-    width: 1050px;
-    font-size: 1.5rem;
-    margin-left: 100px;
+    width: 100vw;
+    font-size: 1rem;
 }
 
 #a-empresa>div{
@@ -80,7 +87,7 @@ header img{
 }
 
 .bloco-servicos{
-    width: 400px;
+    width: 50vw;
     text-align: center;
 }
 
@@ -92,7 +99,8 @@ header img{
 }
 
 .bloco-servicos li{
-    text-align: left
+    text-align: left;
+    padding: 2px 0;
 }
 
 .bloco-servicos img{
@@ -101,128 +109,7 @@ header img{
     
 }
 
-@media screen and (max-width: 992px) {
-    body{
-        margin: 0px;
-        font-family: 'Montserrat', sans-serif;
-        width: 990px;
-        
-    }
-    
-    #logo_nav{
-        width: 100px;
-        height: 30px;
-    }
-    
-    nav{
-        margin: 4px 0px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 650px;
-
-        
-    }
-    
-    .menu{
-        display: flex;
-        justify-content: space-evenly;
-        width: 500px;
-        
-    }
-    
-    .menu a{
-        text-decoration: none;
-        color: #002a5a;
-        font-weight: 900;
-        font-size: 0.8rem;
-        
-    }
-    
-    .menu a:hover{
-        text-decoration: underline;
-        border-bottom: 1px solid #6ea6d9;
-        box-sizing: border-box;
-    }
-    
-    header{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: column;
-        background: linear-gradient(to bottom, rgba(0, 42, 90, 0.616),rgba(0, 42, 90, 0.616)), url("../img/background_resp992.jpg");
-        background-repeat: no-repeat;
-        height: 450px;
-     
-        
-    }
-    
-    header p{
-        color: white;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        width:500px;
-        text-align: center;
-    }
-    
-    header img{
-        width: 20px;
-        height: 20px;
-        margin-bottom: 10px;
-    }
-    
-    #a-empresa{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-    
-    }
-    
-    #a-empresa h2{
-        text-align: center;
-        font-weight: bolder;
-        font-size: 1.2rem;
-        margin: 10px 0px;
-        width: 400px;
-    }
-    
-    #a-empresa>div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
-    .bloco-servicos{
-        width: 300px;
-        text-align: center;
-    }
-    
-    .bloco-servicos h3{
-        color: #6ea6d9;
-        font-weight: bolder;
-        text-align: center;
-        font-size: 1.1rem;
-        
-    }
-    
-    .bloco-servicos li{
-        text-align: left;
-        font-size:1rem;
-    }
-    
-    .bloco-servicos img{
-        width:50px;
-        height: 50px;
-        
-    }
-  }
-/*   
- 
-  @media screen and (max-width: 600px) {
+@media(min-width:992px){
     body{
         margin: 0px;
         font-family: 'Montserrat', sans-serif;
@@ -238,6 +125,7 @@ header img{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        height: 8vh;
     }
     
     .menu{
@@ -250,6 +138,7 @@ header img{
         text-decoration: none;
         color: #002a5a;
         font-weight: 900;
+        font-size: 1rem;
         
     }
     
@@ -258,15 +147,20 @@ header img{
         border-bottom: 2px solid #6ea6d9;
         box-sizing: border-box;
     }
+
+    .hide{
+        display: block;
+    }
     
     header{
+        padding: 0;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         flex-direction: column;
         background: linear-gradient(to bottom, rgba(0, 42, 90, 0.616),rgba(0, 42, 90, 0.616)), url("../img/background.jpg");
         background-size: cover;
-        height: 540px;
+        height: 90vh
         
     }
     
@@ -325,4 +219,5 @@ header img{
         height: 70px;
         
     }
-  } */
+    
+}

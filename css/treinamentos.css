@@ -4,27 +4,33 @@
 }
 
 #logo_nav{
-    width: 170px;
-    height: 50px;
+    width: 30vw;
+    height: 8vh;
 }
 
 nav{
-    margin: 8px 0px;
+    margin: 3px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 8vh;
 }
 
 .menu{
     display: flex;
     justify-content: space-evenly;
-    width: 1000px;
+    width: 70vw;
+}
+
+.hide{
+    display: none;
 }
 
 .menu a{
     text-decoration: none;
     color: #002a5a;
     font-weight: 900;
+    font-size: 0.8rem;
     
 }
 
@@ -36,21 +42,21 @@ nav{
 
 #treinamento{
     background-color: #002a5a;
-    height: 90vh;  
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1rem;
 }
 
 #treinamento h2{
     text-align: center;
     color: white;
-    margin-bottom: 70px;
+    
 }
 
 #treinamento>div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -63,14 +69,14 @@ nav{
 .bloco-treinamentos img{
     width: 80px;
     height: 80px;
-    margin-bottom: 7px
+    margin: 1rem;
 }
 
 .bloco-treinamentos h3{
     color: #6ea6d9;
     text-align: center;
     margin-bottom: 10px
-
+    
 }
 
 .bloco-treinamentos p{
@@ -81,32 +87,35 @@ nav{
     background: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 #clientes h2{
     text-align:center;
     font-size: 2rem;    
     color: #002a5a;
     font-weight: bolder;
-    padding: 0;
+    margin: 1rem;;
 }
 
 #clientes>div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
 .quadrado{
     width: 200px;
     height: 200px;
+    margin: 0.5rem;
 }
 
 .retangulo{
     width:300px;
     height: 150px;
+    margin: 0.5rem;
 }
 
 #logo_legalize{
@@ -116,4 +125,138 @@ nav{
 #logo_equilibrio{
     border-radius: 10px;
     padding: 2px;
+}
+
+@media(min-width:992px){
+    *{
+        margin: 0px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    #logo_nav{
+        width: 170px;
+        height: 50px;
+    }
+    
+    nav{
+        margin: 8px 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        width: 1000px;
+    }
+    
+    .menu a{
+        text-decoration: none;
+        color: #002a5a;
+        font-weight: 900;
+        font-size: 1rem;
+        
+    }
+    
+    .menu a:hover{
+        text-decoration: underline;
+        border-bottom: 2px solid #6ea6d9;
+        box-sizing: border-box;
+    }
+
+    .hide{
+        display:block;
+    }
+    
+    #treinamento{
+        background-color: #002a5a;
+        height: 90vh;  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        
+    }
+    
+    #treinamento h2{
+        text-align: center;
+        color: white;
+        margin-bottom: 70px;
+        margin-top: 0;
+    }
+    
+    #treinamento>div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .bloco-treinamentos{
+        width: 300px;
+        text-align: center;
+    }
+    
+    .bloco-treinamentos img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 7px
+    }
+    
+    .bloco-treinamentos h3{
+        color: #6ea6d9;
+        text-align: center;
+        margin-bottom: 10px
+        
+    }
+    
+    .bloco-treinamentos p{
+        color: white;
+        text-align: justify;
+    }
+    #clientes{
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        
+    }
+    #clientes h2{
+        text-align:center;
+        font-size: 2rem;    
+        color: #002a5a;
+        font-weight: bolder;
+        padding: 0;
+    }
+    
+    #clientes>div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .quadrado{
+        width: 200px;
+        height: 200px;
+        margin:0.5rem 7rem;
+    }
+    
+    .retangulo{
+        width:300px;
+        height: 150px;
+        margin:0.5rem 7rem;
+    }
+    
+    #logo_legalize{
+        border-radius: 10px;
+    }
+    
+    #logo_equilibrio{
+        border-radius: 10px;
+        padding: 2px;
+    }
 }

@@ -3,28 +3,35 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
 #logo_nav{
-    width: 170px;
-    height: 50px;
+    width: 30vw;
+    height: 8vh;
 }
 
 nav{
-    margin: 8px 0px;
+    margin: 3px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 8vh;
 }
 
 .menu{
     display: flex;
     justify-content: space-evenly;
-    width: 1000px;
+    width: 70vw;
+}
+
+.hide{
+    display: none;
 }
 
 .menu a{
     text-decoration: none;
     color: #002a5a;
     font-weight: 900;
+    font-size: 0.8rem;
     
 }
 
@@ -34,24 +41,26 @@ nav{
     box-sizing: border-box;
 }
 
+
+
 h2{
     text-align: center;
     font-weight: bolder;
-    height: 60px;
-    padding: 35px 0px;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    margin-top:1rem;
 }
 
 section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    border-right: #002a5a 3px solid;
-    width: 650px;
+    border: none;
+    width: 80vw;
     align-items: center;
     margin-right: 2px;
 }
@@ -64,8 +73,8 @@ fieldset{
 }
 
 fieldset>input{
-    width:500px;
-    height: 35px;
+    width:75vw;
+    height: 8vh;
     border: 1.6px solid #002a5abb;
     border-radius: 15px;
     -ms-border: 1.6px;
@@ -74,8 +83,8 @@ fieldset>input{
 }
 
 fieldset>textarea{
-    width: 500px;
-    height: 130px;
+    width: 75vw;
+    height: 40vh;
     border: 1.6px solid #002a5abb;
     border-radius: 10px;
     padding-left: 10px;
@@ -84,14 +93,14 @@ fieldset>textarea{
 
 fieldset>label{
     text-align: left;
-    margin: 8px;
+    margin: 4px;
 }
 
 .botao {
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    width: 18%;
+    width: 30vw;
     padding: 0.7rem;
     margin-bottom: 1rem;
     background: #002a5a;
@@ -101,9 +110,9 @@ fieldset>label{
   }
 
 #contatos{
-    border-left: #6ea6d9 3px solid;
+    border:none;
     margin-left: 2px;
-    width: 600px;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,10 +123,143 @@ fieldset>label{
     text-align: center;
     color: #002a5a;
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 #redes_sociais img{
     margin: 20px 10px;
     height: 70px;
     width: 70px;
+}
+
+@media(min-width:992px){
+    *{
+        margin: 0px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #logo_nav{
+        width: 170px;
+        height: 50px;
+    }
+    
+    nav{
+        margin: 8px 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        width: 1000px;
+    }
+    
+    .menu a{
+        text-decoration: none;
+        color: #002a5a;
+        font-weight: 900;
+        font-size: 1rem;
+        
+    }
+    
+    .menu a:hover{
+        text-decoration: underline;
+        border-bottom: 2px solid #6ea6d9;
+        box-sizing: border-box;
+    }
+    
+    .hide{
+        display: block;
+    }
+
+    h2{
+        text-align: center;
+        font-weight: bolder;
+        height: 60px;
+        padding: 35px 0px;
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        border-right: #002a5a 3px solid;
+        width: 650px;
+        align-items: center;
+        margin-right: 2px;
+    }
+    
+    fieldset{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        border: none;
+    }
+    
+    fieldset>input{
+        width:500px;
+        height: 35px;
+        border: 1.6px solid #002a5abb;
+        border-radius: 15px;
+        -ms-border: 1.6px;
+        -ms-border-color: #002a5abb;
+        padding-left: 10px;
+    }
+    
+    fieldset>textarea{
+        width: 500px;
+        height: 130px;
+        border: 1.6px solid #002a5abb;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-top: 2px;
+    }
+    
+    fieldset>label{
+        text-align: left;
+        margin: 8px;
+    }
+    
+    .botao {
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        width: 18%;
+        padding: 0.7rem;
+        margin-bottom: 1rem;
+        background: #002a5a;
+        border: 1px solid #002a5a;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    
+    #contatos{
+        border-left: #6ea6d9 3px solid;
+        margin-left: 2px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 85vh;
+    }
+    
+    #contatos p{
+        text-align: center;
+        color: #002a5a;
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+    #redes_sociais img{
+        margin: 20px 10px;
+        height: 70px;
+        width: 70px;
+    }
 }
