@@ -3,43 +3,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-#logo_nav{
-    width: 32vw;
-    height: 8vh;
-}
-
-nav{
-    margin: 3px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 8vh;
-}
-
-.menu{
-    display: flex;
-    justify-content: space-evenly;
-    width: 70vw;
-}
-
-.hide{
-    display: none;
-}
-
-.menu a{
-    text-decoration: none;
-    color: #002a5a;
-    font-weight: 900;
-    font-size: 0.8rem;
-    
-}
-
-.menu a:hover{
-    text-decoration: underline;
-    border-bottom: 2px solid #6ea6d9;
-    box-sizing: border-box;
-}
-
 header{
     padding-top: 2rem;
     display: flex;
@@ -115,42 +78,6 @@ header img{
         font-family: 'Montserrat', sans-serif;
     }
     
-    #logo_nav{
-        width: 170px;
-        height: 50px;
-    }
-    
-    nav{
-        margin: 8px 0px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 8vh;
-    }
-    
-    .menu{
-        display: flex;
-        justify-content: space-evenly;
-        width: 1000px;
-    }
-    
-    .menu a{
-        text-decoration: none;
-        color: #002a5a;
-        font-weight: 900;
-        font-size: 1rem;
-        
-    }
-    
-    .menu a:hover{
-        text-decoration: underline;
-        border-bottom: 2px solid #6ea6d9;
-        box-sizing: border-box;
-    }
-
-    .hide{
-        display: block;
-    }
     
     header{
         padding: 0;
