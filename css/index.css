@@ -36,6 +36,7 @@ header img{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    padding-top:2rem;
 }
 
 #a-empresa h2{
@@ -111,6 +112,7 @@ header img{
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+        padding-top: 3rem;
     }
     
     #a-empresa h2{
@@ -119,6 +121,7 @@ header img{
         width: 1050px;
         font-size: 1.5rem;
         margin-left: 100px;
+
     }
     
     #a-empresa>div{
